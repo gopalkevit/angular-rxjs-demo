@@ -1,0 +1,16 @@
+<h2>User List</h2>
+<select [(ngModel)]="selectedUserId">
+  <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
+</select>
+
+<hr />
+
+<button (click)="loadWithSwitchMap()">switchMap</button>
+<button (click)="loadWithMergeMap()">mergeMap</button>
+<button (click)="loadWithConcatMap()">concatMap</button>
+<button (click)="loadWithExhaustMap()">exhaustMap</button>
+
+<h3>Posts</h3>
+<ul>
+  <li *ngFor="let post of posts">{{ post.title }}</li>
+</ul>
