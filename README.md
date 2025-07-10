@@ -36,7 +36,7 @@ This project demonstrates key RxJS operators used in Angular for handling async 
 
 ```bash
 git clone <repo>
-checkout `development` branch
 cd <project>
+checkout `development` branch
 npm install
 ng serve
